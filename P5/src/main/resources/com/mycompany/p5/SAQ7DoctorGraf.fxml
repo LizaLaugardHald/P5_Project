@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- sådan laves kommentar i frontend delen -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="800" prefWidth="1200" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.p5.PrimaryController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="230.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Data/Billeder/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane minWidth="-Infinity" prefHeight="481.0" prefWidth="630.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="422.0" text="SAQ-7 - Patientens fulde navn og CPR nr.">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="tilbage4" layoutX="470.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonActionTilbage4" style="-fx-background-color: #87cefa;" text="Tilbage" />
+            <Button fx:id="logAf3" layoutX="551.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonActionLogAf3" style="-fx-background-color: #87cefa;" text="Log af" />
+            <StackedBarChart layoutX="119.0" layoutY="190.0" prefHeight="202.0" prefWidth="499.0">
+              <xAxis>
+                <CategoryAxis label="Spørgsmål" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis autoRanging="false" label="Score" side="LEFT" tickUnit="10.0" />
+              </yAxis>
+            </StackedBarChart>
+            <Label layoutX="14.0" layoutY="419.0" text="Samlet score" />
+            <Label layoutX="20.0" layoutY="62.0" prefHeight="21.0" prefWidth="600.0" text="Denne side indeholder patientens besvarelse af the Seattle Angina Questionnaire (SAQ-7)." />
+            <Label layoutX="20.0" layoutY="79.0" prefHeight="21.0" prefWidth="590.0" text="SAQ-7 indeholder information om patienten symptomer, funktionalitet og livsglæde." />
+            <Label layoutX="20.0" layoutY="96.0" prefHeight="26.0" prefWidth="583.0" text="Spørgsmål 1-5 har 6 svarmuligheder som giver scoremulighederne: 0-20-40-60-80-100." />
+            <Label layoutX="20.0" layoutY="122.0" prefHeight="21.0" prefWidth="572.0" text="Spørgsmål 6 og 7 har svarmuligheder som giver scoremulighederne: 0-25-50-75-100." />
+            <Label layoutX="20.0" layoutY="139.0" prefHeight="21.0" prefWidth="590.0" text="Resultaterne er illustreret på en graf, der kan dannes ud fra enkelte eller alle besvarelser. " />
+            <Label layoutX="20.0" layoutY="156.0" prefHeight="21.0" prefWidth="600.0" text="Under grafen vises den samlede score. Hvis patienten har angivet yderligere kommentarer" />
+            <Label layoutX="20.0" layoutY="173.0" prefHeight="17.0" prefWidth="489.0" text="i forbindelse med SAQ-7 vises disse i et felt under grafen." />
+            <Label layoutX="10.0" layoutY="202.0" prefHeight="17.0" prefWidth="206.0" text="Vælg besvarelse:" />
+            <CheckBox layoutX="10.0" layoutY="225.0" mnemonicParsing="false" text="Alle besvarelser" />
+            <CheckBox layoutX="10.0" layoutY="247.0" mnemonicParsing="false" text="Dato?" />
+            <TextArea layoutX="161.0" layoutY="388.0" prefHeight="86.0" prefWidth="454.0" />
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

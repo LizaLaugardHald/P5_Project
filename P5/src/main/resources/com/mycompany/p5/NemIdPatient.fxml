@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- sådan laves kommentar i frontend delen -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="800" prefWidth="1200" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.p5.NemIdPatientController">
+   <children>
+      <AnchorPane prefHeight="265.0" prefWidth="1160.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="230.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Data/Billeder/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane minWidth="-Infinity" prefHeight="481.0" prefWidth="630.0" scaleX="0.7" scaleY="0.9" style="-fx-background-color: #87ceeb;">
+         <children>
+            <AnchorPane layoutX="15.0" layoutY="62.0" prefHeight="45.0" prefWidth="542.0" style="-fx-background-color: White;" AnchorPane.bottomAnchor="353.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="62.0">
+               <children>
+                  <Label layoutX="33.0" layoutY="5.0" prefHeight="29.0" prefWidth="137.0" text="NemLog-in">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <Label layoutX="34.0" layoutY="4.0" prefHeight="58.0" prefWidth="171.0" text="NEM ID">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="GlemtKode" alignment="CENTER" layoutX="48.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleButtonActionGlemtKode" prefHeight="43.0" prefWidth="163.0" text="Glemt kode?" underline="true" AnchorPane.leftAnchor="48.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="Næste3" alignment="CENTER" layoutX="336.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleButtonActionNæste3" prefHeight="44.0" prefWidth="136.0" text="Login" AnchorPane.rightAnchor="39.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="adgangskode" alignment="CENTER" layoutX="92.0" layoutY="260.0" prefHeight="31.0" prefWidth="402.0" promptText="Adgangskode" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="89.0" />
+            <TextField fx:id="brugernavn" alignment="CENTER" layoutX="83.0" layoutY="169.0" prefHeight="31.0" prefWidth="403.0" promptText="Bruger-id" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="89.0" />
+            <Label fx:id="credentials" alignment="TOP_LEFT" layoutX="27.0" layoutY="122.0" prefHeight="30.0" prefWidth="140.0" text="Bruger-id" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="408.0">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="20.0" layoutY="215.0" text="Adgangskode" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="408.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="tilbage2" alignment="CENTER" layoutX="260.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleButtonActionTilbage2" prefHeight="43.0" prefWidth="136.0" text="Tilbage">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Label fx:id="fejlBesked" alignment="CENTER" layoutX="313.0" layoutY="139.0" prefHeight="27.0" prefWidth="29.0" />
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

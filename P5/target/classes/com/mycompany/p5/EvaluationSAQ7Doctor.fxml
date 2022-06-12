@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- sådan laves kommentar i frontend delen -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.p5.EvaluationSAQ7DoctorController">
+   <children>
+      <AnchorPane minWidth="-Infinity" prefHeight="799.0" prefWidth="1160.0">
+         <children>
+            <Button fx:id="evalueringLaege" layoutX="240.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleButtonActionEvalueringLaege" prefHeight="161.0" prefWidth="295.0" text="Evaluering">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="SAQ7laege" layoutX="667.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleButtonActionSAQ7Laege" prefHeight="161.0" prefWidth="295.0" text="SAQ-7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="logAf2" layoutX="1036.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonActionLogAf2" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #87cefa;" text="Log af" />
+            <Label layoutX="36.0" layoutY="194.0" prefHeight="23.0" prefWidth="627.0" text="Gå til ”Evaluering” for at se patientens besvarelse i forbindelse med eget skanningsbillede." />
+            <Label layoutX="36.0" layoutY="217.0" prefHeight="31.0" prefWidth="468.0" text="Gå til ”SAQ-7” for at se patientens besvarelse af SAQ-7." />
+            <Button fx:id="tilbage2" layoutX="907.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonOnActionTilbage2" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #87cefa;" text="Tilbage" />
+            <ImageView fitHeight="100.0" fitWidth="230.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Data/Billeder/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

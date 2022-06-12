@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- sådan laves kommentar i frontend delen -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.p5.PrimaryController">
+   <children>
+      <AnchorPane minWidth="-Infinity" prefHeight="793.0" prefWidth="1160.0">
+         <children>
+            <Label layoutX="30.0" layoutY="134.0" prefHeight="32.0" prefWidth="422.0" text=" Evaluering - Patientens fulde navn, CPR-nr.">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="886.0" layoutY="26.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #87cefa;" text="Tilbage" />
+            <Button layoutX="1025.0" layoutY="26.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #87cefa;" text="Log af" />
+            <ImageView fitHeight="455.0" fitWidth="435.0" layoutX="139.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Billeder/hjerteCT.PNG" />
+               </image>
+            </ImageView>
+            <TextArea layoutX="666.0" layoutY="197.0" prefHeight="375.0" prefWidth="449.0" promptText="Lægens billedbeskrivelse" />
+            <Button layoutX="886.0" layoutY="599.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="229.0" style="-fx-background-color: #00bfff;" text="Patientens evaluering">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="40.0" layoutY="181.0" prefHeight="32.0" prefWidth="149.0" text="Skanning dato">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="100.0" fitWidth="230.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Data/Billeder/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

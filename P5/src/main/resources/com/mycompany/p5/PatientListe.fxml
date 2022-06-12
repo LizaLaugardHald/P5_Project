@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- sådan laves kommentar i frontend delen -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="800" prefWidth="1200" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.p5.PatientListeController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="230.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Data/Billeder/Logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="LogAf" layoutX="1095.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleButtonActionLogAf" style="-fx-background-color: lightblue;" text="Log af" />
+            <Button fx:id="tilbage12" layoutX="1018.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleButtonActionTilbage12" prefHeight="20.0" prefWidth="60.0" style="-fx-background-color: lightblue;" text="Tilbage" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="593.0" prefWidth="671.0">
+         <children>
+            <Label fx:id="navn" layoutX="14.0" text="Borgerens navn">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TableView fx:id="scanningView" layoutY="53.0" prefHeight="490.0" prefWidth="1160.0">
+              <columns>
+                <TableColumn fx:id="dato" prefWidth="386.66" text="Dato" />
+                <TableColumn fx:id="scanningsType" prefWidth="386.66" text="Scanningstype" />
+                  <TableColumn fx:id="hospital" prefWidth="383.66" text="Hospital" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- sådan laves kommentar i frontend delen -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.p5.PrimaryController">
+   <children>
+      <AnchorPane minWidth="-Infinity" prefHeight="799.0" prefWidth="1160.0">
+         <children>
+            <Label layoutX="50.0" layoutY="123.0" prefHeight="27.0" prefWidth="237.0" text="Skanningstype + Dato">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="tilbage7" layoutX="893.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleButtonActionTilbage7" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #87cefa;" text="Tilbage" />
+            <Button fx:id="logAf7" layoutX="1024.0" layoutY="32.0" mnemonicParsing="false" onAction="#handleButtonActionLogAf7" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #87cefa;" text="Log af" />
+            <ImageView fitHeight="505.0" fitWidth="715.0" layoutX="168.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Billeder/hjerteCT.PNG" />
+               </image>
+            </ImageView>
+            <TextArea layoutX="678.0" layoutY="153.0" prefHeight="263.0" prefWidth="461.0" promptText="Lægens billedbeskrivelse" />
+            <TextArea layoutX="677.0" layoutY="442.0" prefHeight="156.0" prefWidth="461.0" promptText="Ordbog/Opslag af fagtermer skrevet af lægen " />
+            <Button fx:id="evaluering2" layoutX="893.0" layoutY="645.0" mnemonicParsing="false" onAction="#handleButtonActionEvaluering2" prefHeight="71.0" prefWidth="168.0" style="-fx-background-color: #00bfff;" text="Evaluering">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="100.0" fitWidth="230.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Data/Billeder/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
