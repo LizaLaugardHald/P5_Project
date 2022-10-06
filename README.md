@@ -3,7 +3,7 @@
 ### **_Introduction_**
 This program was made as a university group project.
 
-##Abstract of the project:
+## Abstract of the project:
 ### **_Purpose:_**
 This paper investigates how patients with
 Coronary Artery Disease (CAD) can be able to get
