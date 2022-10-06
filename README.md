@@ -43,4 +43,6 @@ it requires further development.
 5. phpMyAdmin
 6. SQL
  
-## How to run the game
+## How to run the program
+Import the project in your prefered Java IDE and run the code.
+Note that the database no longer exist, so most of the program will not function.
