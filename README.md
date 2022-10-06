@@ -45,4 +45,5 @@ it requires further development.
  
 ## How to run the program
 Import the project in your prefered Java IDE and run the code.
-Note that the database no longer exist, so most of the program will not function.
+Note that the database no longer exist, so most of the program will not function. 
+Please contact me for a video of the HeartSmartShare SSE System. 
