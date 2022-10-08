@@ -1,7 +1,7 @@
 # P5 project
 
 ### **_Introduction_**
-This program was made as a university group project.
+This program was made as a university group project. 
 
 ## Abstract of the project:
 ### **_Purpose:_**
